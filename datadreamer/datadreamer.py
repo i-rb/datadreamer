@@ -32,7 +32,7 @@ def monthly(xlsxfile="test", save=True): # if not xlsxfile passed, test xlsx. sa
     if xlsxfile=="test":
         
         url = "https://github.com/i-rb/datadreamer/blob/master/data/input_trial.xlsx?raw=true"
-        df = pd.read_excel(url)
+        df = pd.read_excel(url,sheet_name=0)
         
     elif xlsxfile!="test":
         
@@ -196,7 +196,7 @@ def weekly(xlsxfile="test", save=True): # if not xlsxfile passed, test xlsx. sav
     if xlsxfile=="test":
         
         url = "https://github.com/i-rb/datadreamer/blob/master/data/input_trial.xlsx?raw=true"
-        df = pd.read_excel(url)
+        df = pd.read_excel(url,sheet_name=0)
         
     elif xlsxfile!="test":
         
